@@ -48,7 +48,7 @@ const Contact: React.FC = () => {
                 <a href="#" className="p-3 bg-white/10 hover:bg-white/20 rounded-full transition-colors duration-300">
                   <Youtube size={20} />
                 </a>
-                <a href="#" className="p-3 bg-white/10 hover:bg-white/20 rounded-full transition-colors duration-300">
+                <a href="https://www.facebook.com/sumitkumar.sahu.35728/" className="p-3 bg-white/10 hover:bg-white/20 rounded-full transition-colors duration-300">
                   <Facebook size={20} />
                 </a>
                 <a href="#" className="p-3 bg-white/10 hover:bg-white/20 rounded-full transition-colors duration-300">
