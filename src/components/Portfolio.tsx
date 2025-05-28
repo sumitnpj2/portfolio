@@ -6,7 +6,7 @@ const Portfolio: React.FC = () => {
     <section id="portfolio" className="py-20 bg-white dark:bg-gray-800">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">My Portfolio</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">My Projects</h2>
           <div className="w-24 h-1 bg-blue-600 dark:bg-blue-400 mx-auto"></div>
           <p className="text-gray-600 dark:text-gray-400 mt-4 max-w-2xl mx-auto">
             I'm currently building my portfolio. Check back soon to see my upcoming projects!
