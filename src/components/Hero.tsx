@@ -9,13 +9,34 @@ const Hero: React.FC = () => {
     }
   };
 
-  return (    <section id="hero" className="min-h-screen flex items-center pt-16 relative overflow-hidden">
-      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-blue-50 to-teal-50 dark:from-gray-900 dark:to-gray-800"></div>
+  return (
+    <section id="hero" className="min-h-screen flex items-center pt-16 relative overflow-hidden">
+      {/* Main background */}
+      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-indigo-50 via-blue-50 to-teal-50 dark:from-gray-900 dark:via-blue-950 dark:to-gray-800"></div>
       
-      {/* Decorative elements */}
-      <div className="absolute top-20 right-10 w-64 h-64 bg-blue-200 dark:bg-blue-900/30 rounded-full filter blur-3xl opacity-30 animate-blob"></div>
-      <div className="absolute bottom-20 left-10 w-72 h-72 bg-teal-200 dark:bg-teal-900/30 rounded-full filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
+      {/* Animated background elements */}
+      <div className="absolute inset-0 -z-5">
+        {/* Gradient overlay */}
+        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.1),rgba(255,255,255,0))] animate-pulse-soft"></div>
+        
+        {/* Floating blobs */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-blue-300/20 to-transparent rounded-full filter blur-3xl animate-blob"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-teal-300/20 to-transparent rounded-full filter blur-3xl animate-blob animation-delay-2000"></div>
+        <div className="absolute top-1/2 left-1/4 w-72 h-72 bg-gradient-to-br from-purple-300/20 to-transparent rounded-full filter blur-3xl animate-blob animation-delay-4000"></div>
+        
+        {/* Additional decorative elements */}
+        <div className="absolute top-20 left-1/3 w-24 h-24 bg-blue-400/10 dark:bg-blue-400/5 rounded-full animate-float"></div>
+        <div className="absolute bottom-32 right-1/4 w-16 h-16 bg-teal-400/10 dark:bg-teal-400/5 rounded-full animate-float animation-delay-2000"></div>
+      </div>
       
+      {/* Mesh pattern overlay */}
+      <div className="absolute inset-0 -z-5 opacity-20 dark:opacity-10"
+           style={{
+             backgroundImage: `radial-gradient(circle at 1px 1px, rgba(0,0,0,0.1) 1px, transparent 0)`,
+             backgroundSize: '18px 18px'
+           }}>
+      </div>
+
       <div className="container mx-auto px-8 md:px-12 lg:px-16 flex flex-col md:flex-row items-center">
         <div className="w-full md:w-1/2 text-center md:text-left order-2 md:order-1">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
